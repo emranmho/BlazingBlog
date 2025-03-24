@@ -18,7 +18,7 @@ else
     {
         <h4>@article.Title</h4>
         <p>@article.Content</p>
-        <small>@article.CreatedAt</small>
+        <small>@article.Created</small>
     }
 }
 @code {
@@ -26,8 +26,7 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        await Task.Delay(1000);
-        var result = ArticleService.GetArticles();
+        var result = await ArticleService.GetArticles();
         if (result.Any())
             _articles = result;
     }

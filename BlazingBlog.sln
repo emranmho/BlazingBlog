@@ -11,6 +11,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazingBlog.Domain", "Blazi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazingBlog.Application", "BlazingBlog.Application\BlazingBlog.Application.csproj", "{8E1D5C4B-576F-4243-B349-7A8D111E6654}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazingBlog.Infrastructure", "BlazingBlog.Infrastructure\BlazingBlog.Infrastructure.csproj", "{EA5255A8-46EA-41DE-9E57-853C768C82B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ED2DA618-A05C-453E-9169-E6BA4436CCD3}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +36,10 @@ Global
 		{8E1D5C4B-576F-4243-B349-7A8D111E6654}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E1D5C4B-576F-4243-B349-7A8D111E6654}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E1D5C4B-576F-4243-B349-7A8D111E6654}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA5255A8-46EA-41DE-9E57-853C768C82B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA5255A8-46EA-41DE-9E57-853C768C82B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA5255A8-46EA-41DE-9E57-853C768C82B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA5255A8-46EA-41DE-9E57-853C768C82B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +48,7 @@ Global
 		{83CCD85C-1E63-467F-90B9-0FFBE852DF25} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{BFF3519D-6977-42ED-991F-FAE4DE59BE52} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{8E1D5C4B-576F-4243-B349-7A8D111E6654} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{EA5255A8-46EA-41DE-9E57-853C768C82B1} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1850BD0B-1662-4D7D-AE86-49B95BB8DD81}
