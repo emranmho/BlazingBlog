@@ -1,0 +1,35 @@
+@page "/articles"
+@using BlazingBlog.Application.Articles
+@using BlazingBlog.Domain.Articles
+@inject IArticleService ArticleService
+@attribute [StreamRendering]
+
+<PageTitle>Articles</PageTitle>
+
+<h3>Articles</h3>
+
+@if (_articles.Count == 0)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    @foreach(var article in _articles)
+    {
+        <h4>@article.Title</h4>
+        <p>@article.Content</p>
+        <small>@article.CreatedAt</small>
+    }
+}
+@code {
+    private List<Article> _articles = new List<Article>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Delay(1000);
+        var result = ArticleService.GetArticles();
+        if (result.Any())
+            _articles = result;
+    }
+
+}
