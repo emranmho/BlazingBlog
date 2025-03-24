@@ -1,0 +1,10 @@
+﻿services:
+  db:
+    image: "postgres:latest"
+    restart: always
+    environment:
+      - POSTGRES_USER=postgresRestApi
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=BlazingBlogsDb
+    ports:
+      - "5432:5432"
