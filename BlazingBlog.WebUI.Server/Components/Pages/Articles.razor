@@ -1,7 +1,9 @@
 @page "/articles"
 @using BlazingBlog.Application.Articles
+@using BlazingBlog.Application.Articles.GetArticles
 @using BlazingBlog.Domain.Articles
-@inject IArticleService ArticleService
+@using MediatR
+@inject ISender Sender
 @attribute [StreamRendering]
 
 <PageTitle>Articles</PageTitle>
@@ -26,7 +28,7 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        var result = await ArticleService.GetArticles();
+        var result = await Sender.Send(new GetArticlesQuery());
         if (result.Any())
             _articles = result;
     }
